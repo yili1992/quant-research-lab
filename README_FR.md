@@ -166,16 +166,16 @@ Les rôles forment un **Graphe Acyclique Dirigé (DAG)**, et non une chaîne lin
 npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### Option 2 : Collez ceci à votre agent IA
+### Option 2 : Collez ceci dans Claude Code
 
 > Installez la compétence `quant-research-lab`. Suivez ces étapes :
 >
-> 1. Assurez-vous que le répertoire `~/.hermes/skills/` existe (créez-le si nécessaire)
-> 2. Exécutez `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
-> 3. Vérifiez : `ls ~/.hermes/skills/quant-research-lab/` doit afficher `SKILL.md`, `roles/`, `pipelines/`
+> 1. Assurez-vous que le répertoire `.claude/skills/` existe dans le projet courant (créez-le si nécessaire)
+> 2. Exécutez `git clone https://github.com/yili1992/quant-research-lab.git .claude/skills/quant-research-lab`
+> 3. Vérifiez : `ls .claude/skills/quant-research-lab/` doit afficher `SKILL.md`, `roles/`, `pipelines/`
 > 4. Confirmez l'installation. Lorsque je décrirai des besoins en recherche quantitative, cette compétence s'activera automatiquement.
 
-Collez le texte ci-dessus dans Claude Code / Cursor / tout agent IA avec accès shell.
+Collez le texte ci-dessus dans Claude Code — il gérera l'installation complète.
 
 ### Option 3 : Ligne de commande manuelle
 

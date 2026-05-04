@@ -163,16 +163,16 @@
 npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### Способ 2: Вставьте этот текст вашему AI-агенту
+### Способ 2: Вставьте этот текст в Claude Code
 
 > Установите навык `quant-research-lab`. Выполните следующие шаги:
 >
-> 1. Убедитесь, что директория `~/.hermes/skills/` существует (создайте при необходимости)
-> 2. Выполните `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
-> 3. Проверьте: `ls ~/.hermes/skills/quant-research-lab/` должен показать `SKILL.md`, `roles/`, `pipelines/`
+> 1. Убедитесь, что директория `.claude/skills/` существует в текущем проекте (создайте при необходимости)
+> 2. Выполните `git clone https://github.com/yili1992/quant-research-lab.git .claude/skills/quant-research-lab`
+> 3. Проверьте: `ls .claude/skills/quant-research-lab/` должен показать `SKILL.md`, `roles/`, `pipelines/`
 > 4. Подтвердите установку. Когда я опишу потребности в количественных исследованиях, этот навык активируется автоматически.
 
-Вставьте текст выше в Claude Code / Cursor / любого AI-агента с доступом к shell.
+Вставьте текст выше в Claude Code — он выполнит установку автоматически.
 
 ### Способ 3: Ручная установка через командную строку
 

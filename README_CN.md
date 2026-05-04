@@ -163,16 +163,16 @@
 npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### 方式二：把下面这段话直接发给 AI
+### 方式二：把下面这段话直接发给 Claude Code
 
 > 帮我安装 `quant-research-lab` 这个技能。请按下面步骤做：
 >
-> 1. 确保 `~/.hermes/skills/` 目录存在（不存在就创建）
-> 2. 执行 `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
-> 3. 验证：`ls ~/.hermes/skills/quant-research-lab/` 应该看到 `SKILL.md`、`roles/`、`pipelines/` 三项
+> 1. 确保当前项目的 `.claude/skills/` 目录存在（不存在就创建）
+> 2. 执行 `git clone https://github.com/yili1992/quant-research-lab.git .claude/skills/quant-research-lab`
+> 3. 验证：`ls .claude/skills/quant-research-lab/` 应该看到 `SKILL.md`、`roles/`、`pipelines/` 三项
 > 4. 告诉我安装好了，之后我说"做一下回测"之类的话就会触发这个技能
 
-把这段话复制粘贴给 Claude Code / Cursor / 任何有 shell 权限的 AI Agent，它会自动完成安装。
+把这段话复制粘贴给 Claude Code，它会自动完成安装。
 
 ### 方式三：手动命令行
 

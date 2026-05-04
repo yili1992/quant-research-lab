@@ -163,16 +163,16 @@
 npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### 方法2：以下のテキストをAIに貼り付ける
+### 方法2：以下のテキストを Claude Code に貼り付ける
 
 > `quant-research-lab` スキルをインストールしてください。以下の手順に従ってください：
 >
-> 1. `~/.hermes/skills/` ディレクトリが存在することを確認（なければ作成）
-> 2. `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab` を実行
-> 3. 確認：`ls ~/.hermes/skills/quant-research-lab/` で `SKILL.md`、`roles/`、`pipelines/` が表示されること
+> 1. カレントプロジェクトの `.claude/skills/` ディレクトリが存在することを確認（なければ作成）
+> 2. `git clone https://github.com/yili1992/quant-research-lab.git .claude/skills/quant-research-lab` を実行
+> 3. 確認：`ls .claude/skills/quant-research-lab/` で `SKILL.md`、`roles/`、`pipelines/` が表示されること
 > 4. インストール完了を報告。以降、定量研究のニーズを述べるとこのスキルが自動的に発動します
 
-上記を Claude Code / Cursor / シェルアクセスを持つ任意のAIエージェントに貼り付けてください。
+上記を Claude Code に貼り付けてください。
 
 ### 方法3：手動コマンドライン
 

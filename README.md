@@ -163,16 +163,16 @@ Roles form a **Directed Acyclic Graph (DAG)**, not a linear chain. Different res
 npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### Option 2: Paste This to Your AI Agent
+### Option 2: Paste This to Claude Code
 
 > Install the `quant-research-lab` skill. Follow these steps:
 >
-> 1. Ensure `~/.hermes/skills/` directory exists (create if not)
-> 2. Run `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
-> 3. Verify: `ls ~/.hermes/skills/quant-research-lab/` should show `SKILL.md`, `roles/`, `pipelines/`
+> 1. Ensure `.claude/skills/` directory exists in the current project (create if not)
+> 2. Run `git clone https://github.com/yili1992/quant-research-lab.git .claude/skills/quant-research-lab`
+> 3. Verify: `ls .claude/skills/quant-research-lab/` should show `SKILL.md`, `roles/`, `pipelines/`
 > 4. Confirm installation is complete. When I describe quantitative research needs, this skill should activate automatically.
 
-Paste the above into Claude Code / Cursor / any AI Agent with shell access — it will handle the full installation.
+Paste the above into Claude Code — it will handle the full installation.
 
 ### Option 3: Manual Command Line
 
@@ -188,12 +188,11 @@ The role templates in `roles/` can be used independently as high-quality system 
 
 Once installed, the skill activates automatically when you describe quantitative research needs:
 
-- "帮我设计一个费率套利策略" — Triggers Strategy Architect
-- "做一下这个策略的回测" — Triggers Backtest Engine
-- "启动量化流水线" — Shows track selection menu
-- "因子流水线" — Starts Factor Research track
-- "run a quant pipeline" / "backtest this strategy" — English triggers
-- "用高盛角色" / "做回测" / "风控分析" — Toolbox mode for specific roles
+- "Design a funding rate arbitrage strategy" — Triggers Strategy Architect
+- "Run a backtest on this strategy" — Triggers Backtest Engine
+- "Launch the quant pipeline" — Shows track selection menu
+- "Factor research pipeline" — Starts Factor Research track
+- "Use the Goldman Sachs role" / "Do a backtest" / "Run risk analysis" — Toolbox mode for specific roles
 
 ---
 
