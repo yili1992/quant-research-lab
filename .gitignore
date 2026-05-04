@@ -1,0 +1,6 @@
+# Pipeline state (runtime generated, not source code)
+state/research-context.md
+
+# OS files
+.DS_Store
+Thumbs.db
