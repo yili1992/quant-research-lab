@@ -345,11 +345,3 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-## Acknowledgments
-
-This framework draws inspiration from the operational structure of leading quantitative trading firms. Role personas are **fictional representations** of institutional expertise — they are not affiliated with, endorsed by, or connected to any named firm. The goal is to capture the *methodological rigor* and *domain specialization* that makes these firms successful, and make it accessible through LLM agents.
-
-Special thanks to:
-- [TradingAgents](https://github.com/TauricResearch/TradingAgents) by Tauric Research — for pioneering the multi-agent financial trading framework paradigm
-- [Claude Code](https://github.com/anthropics/claude-code) by Anthropic — for the agent execution environment
-- [Hermes Agent](https://hermes.nousresearch.com) by Nous Research — for the skill framework and orchestration capabilities

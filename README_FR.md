@@ -348,11 +348,3 @@ Licence MIT — voir [LICENSE](LICENSE) pour les détails.
 
 ---
 
-## Remerciements
-
-Ce cadre s'inspire de la structure opérationnelle des grandes firmes de trading quantitatif. Les personnalités des rôles sont des **représentations fictives** d'une expertise institutionnelle — elles ne sont ni affiliées, ni approuvées, ni liées à une quelconque firme nommée. L'objectif est de capturer la *rigueur méthodologique* et la *spécialisation métier* qui font le succès de ces firmes, et de les rendre accessibles via des agents LLM.
-
-Remerciements spéciaux à :
-- [TradingAgents](https://github.com/TauricResearch/TradingAgents) by Tauric Research — pour avoir été pionnier du paradigme de cadre de trading financier multi-agents
-- [Claude Code](https://github.com/anthropics/claude-code) by Anthropic — pour l'environnement d'exécution des agents
-- [Hermes Agent](https://hermes.nousresearch.com) by Nous Research — pour le cadre de compétences et les capacités d'orchestration

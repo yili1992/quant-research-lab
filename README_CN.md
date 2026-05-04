@@ -345,11 +345,3 @@ MIT License — 详见 [LICENSE](LICENSE)。
 
 ---
 
-## 致谢
-
-本框架的灵感来自顶级量化交易公司的运营架构。角色人设是对机构专业能力的**虚构化呈现**——与任何被提及的公司无关，亦未获得其认可或背书。目标是将这些公司成功背后的*方法论严谨性*和*领域专业化*，通过 LLM 智能体加以实现和普及。
-
-特别感谢：
-- [TradingAgents](https://github.com/TauricResearch/TradingAgents) by Tauric Research — 开创了多智能体金融交易框架范式
-- [Claude Code](https://github.com/anthropics/claude-code) by Anthropic — 提供智能体执行环境
-- [Hermes Agent](https://hermes.nousresearch.com) by Nous Research — 提供技能框架和编排能力

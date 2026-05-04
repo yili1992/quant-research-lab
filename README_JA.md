@@ -345,11 +345,3 @@ MIT License — 詳細は [LICENSE](LICENSE) をご覧ください。
 
 ---
 
-## 謝辞
-
-本フレームワークは、主要なクオンツトレーディングファームの運用構造から着想を得ています。ロールのペルソナは機関投資家の専門知識を**架空の表現**として描いたものであり、名前の挙がった企業とは提携、承認、または関係のあるものではありません。その目的は、これらのファームを成功に導く*方法論的厳密性*と*分野特化*を捉え、LLMエージェントを通じて誰もがアクセスできるようにすることです。
-
-特に以下に感謝いたします：
-- [TradingAgents](https://github.com/TauricResearch/TradingAgents) by Tauric Research — マルチエージェント金融トレーディングフレームワークのパラダイムを切り開いた功績に対して
-- [Claude Code](https://github.com/anthropics/claude-code) by Anthropic — エージェント実行環境に対して
-- [Hermes Agent](https://hermes.nousresearch.com) by Nous Research — スキルフレームワークとオーケストレーション機能に対して
