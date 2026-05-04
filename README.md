@@ -157,23 +157,43 @@ Roles form a **Directed Acyclic Graph (DAG)**, not a linear chain. Different res
 
 ## Installation
 
-### As a Hermes Agent Skill
+### Option 1: One-Line Install (Recommended)
 
 ```bash
-# Copy to your Hermes skills directory
-cp -r quant-research-lab ~/.hermes/skills/
+npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### As a Claude Code Skill
+### Option 2: Paste This to Your AI Agent
+
+> Install the `quant-research-lab` skill. Follow these steps:
+>
+> 1. Ensure `~/.hermes/skills/` directory exists (create if not)
+> 2. Run `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
+> 3. Verify: `ls ~/.hermes/skills/quant-research-lab/` should show `SKILL.md`, `roles/`, `pipelines/`
+> 4. Confirm installation is complete. When I describe quantitative research needs, this skill should activate automatically.
+
+Paste the above into Claude Code / Cursor / any AI Agent with shell access — it will handle the full installation.
+
+### Option 3: Manual Command Line
 
 ```bash
-# Copy to your project's .claude/skills/ directory
-cp -r quant-research-lab /path/to/your/project/.claude/skills/
+git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab
 ```
 
-### As a Standalone Reference
+### Option 4: As a Standalone Reference
 
 The role templates in `roles/` can be used independently as high-quality system prompts for any LLM — no framework required. Each `.md` file is self-contained with persona, task specification, and output format requirements.
+
+### Triggers
+
+Once installed, the skill activates automatically when you describe quantitative research needs:
+
+- "帮我设计一个费率套利策略" — Triggers Strategy Architect
+- "做一下这个策略的回测" — Triggers Backtest Engine
+- "启动量化流水线" — Shows track selection menu
+- "因子流水线" — Starts Factor Research track
+- "run a quant pipeline" / "backtest this strategy" — English triggers
+- "用高盛角色" / "做回测" / "风控分析" — Toolbox mode for specific roles
 
 ---
 

@@ -160,23 +160,41 @@ Les rôles forment un **Graphe Acyclique Dirigé (DAG)**, et non une chaîne lin
 
 ## Installation
 
-### En tant que compétence Hermes Agent
+### Option 1 : Installation en une ligne (Recommandé)
 
 ```bash
-# Copy to your Hermes skills directory
-cp -r quant-research-lab ~/.hermes/skills/
+npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### En tant que compétence Claude Code
+### Option 2 : Collez ceci à votre agent IA
+
+> Installez la compétence `quant-research-lab`. Suivez ces étapes :
+>
+> 1. Assurez-vous que le répertoire `~/.hermes/skills/` existe (créez-le si nécessaire)
+> 2. Exécutez `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
+> 3. Vérifiez : `ls ~/.hermes/skills/quant-research-lab/` doit afficher `SKILL.md`, `roles/`, `pipelines/`
+> 4. Confirmez l'installation. Lorsque je décrirai des besoins en recherche quantitative, cette compétence s'activera automatiquement.
+
+Collez le texte ci-dessus dans Claude Code / Cursor / tout agent IA avec accès shell.
+
+### Option 3 : Ligne de commande manuelle
 
 ```bash
-# Copy to your project's .claude/skills/ directory
-cp -r quant-research-lab /path/to/your/project/.claude/skills/
+git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab
 ```
 
-### En tant que référence autonome
+### Option 4 : En tant que référence autonome
 
 Les modèles de rôles dans `roles/` peuvent être utilisés indépendamment comme prompts système de haute qualité pour n'importe quel LLM — aucun cadre requis. Chaque fichier `.md` est autonome avec sa personnalité, sa spécification de tâche et ses exigences de format de sortie.
+
+### Déclencheurs
+
+Une fois installée, la compétence s'active automatiquement lorsque vous décrivez des besoins en recherche quantitative :
+
+- "Lance un backtest de cette stratégie" — Déclenche le moteur de backtest
+- "Lance le pipeline quantitatif" — Affiche le menu de sélection des pistes
+- "run a quant pipeline" — Déclencheurs en anglais
+- "Utilise le rôle Goldman Sachs" — Mode boîte à outils
 
 ---
 

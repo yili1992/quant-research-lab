@@ -157,23 +157,43 @@
 
 ## 安装
 
-### 作为 Hermes Agent 技能
+### 方式一：一行命令安装（推荐）
 
 ```bash
-# 复制到你的 Hermes 技能目录
-cp -r quant-research-lab ~/.hermes/skills/
+npx skills add https://github.com/yili1992/quant-research-lab --skill quant-research-lab
 ```
 
-### 作为 Claude Code 技能
+### 方式二：把下面这段话直接发给 AI
+
+> 帮我安装 `quant-research-lab` 这个技能。请按下面步骤做：
+>
+> 1. 确保 `~/.hermes/skills/` 目录存在（不存在就创建）
+> 2. 执行 `git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab`
+> 3. 验证：`ls ~/.hermes/skills/quant-research-lab/` 应该看到 `SKILL.md`、`roles/`、`pipelines/` 三项
+> 4. 告诉我安装好了，之后我说"做一下回测"之类的话就会触发这个技能
+
+把这段话复制粘贴给 Claude Code / Cursor / 任何有 shell 权限的 AI Agent，它会自动完成安装。
+
+### 方式三：手动命令行
 
 ```bash
-# 复制到你项目的 .claude/skills/ 目录
-cp -r quant-research-lab /path/to/your/project/.claude/skills/
+git clone https://github.com/yili1992/quant-research-lab.git ~/.hermes/skills/quant-research-lab
 ```
 
-### 作为独立参考
+### 方式四：作为独立参考
 
 `roles/` 目录中的角色模板可以独立使用，作为任何 LLM 的高质量系统提示词——无需框架。每个 `.md` 文件都是自包含的，包含人设、任务规格和输出格式要求。
+
+### 触发方式
+
+装好后，当你描述量化研究需求时，技能会自动激活：
+
+- "帮我设计一个费率套利策略" → 触发策略架构师
+- "做一下这个策略的回测" → 触发回测引擎
+- "启动量化流水线" → 显示流水线选择菜单
+- "因子流水线" → 启动因子研究流水线
+- "run a quant pipeline" / "backtest this strategy" → 英文触发
+- "用高盛角色" / "做回测" / "风控分析" → 工具箱模式
 
 ---
 
